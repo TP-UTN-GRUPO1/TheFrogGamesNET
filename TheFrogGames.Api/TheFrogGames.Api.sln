@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Api", "TheFrogGames.Api.csproj", "{5C0C5411-17B5-413C-8CD2-E2DD1D530117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Infraestructure", "..\TheFrogGames.Infraestructure\TheFrogGames.Infraestructure.csproj", "{C277FCC1-0DAC-4EC9-89D9-974506951AB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Application", "..\TheFrogGames.Application\TheFrogGames.Application.csproj", "{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Domain", "..\TheFrogGames.Domain\TheFrogGames.Domain.csproj", "{0814AA5C-E4AD-4A8C-AC9A-3EAF7BD84331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Contracts", "..\TheFrogGames.Contracts\TheFrogGames.Contracts.csproj", "{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C0C5411-17B5-413C-8CD2-E2DD1D530117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0C5411-17B5-413C-8CD2-E2DD1D530117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0C5411-17B5-413C-8CD2-E2DD1D530117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0C5411-17B5-413C-8CD2-E2DD1D530117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C277FCC1-0DAC-4EC9-89D9-974506951AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C277FCC1-0DAC-4EC9-89D9-974506951AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C277FCC1-0DAC-4EC9-89D9-974506951AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C277FCC1-0DAC-4EC9-89D9-974506951AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0814AA5C-E4AD-4A8C-AC9A-3EAF7BD84331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0814AA5C-E4AD-4A8C-AC9A-3EAF7BD84331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0814AA5C-E4AD-4A8C-AC9A-3EAF7BD84331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0814AA5C-E4AD-4A8C-AC9A-3EAF7BD84331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {930A9DF3-D971-4194-BE5B-22BD701D1986}
+	EndGlobalSection
+EndGlobal

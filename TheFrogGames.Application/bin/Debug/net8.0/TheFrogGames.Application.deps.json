@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TheFrogGames.Application/1.0.0": {
+        "dependencies": {
+          "TheFrogGames.Contracts": "1.0.0",
+          "TheFrogGames.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TheFrogGames.Application.dll": {}
+        }
+      },
+      "TheFrogGames.Contracts/1.0.0": {
+        "runtime": {
+          "TheFrogGames.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TheFrogGames.Domain/1.0.0": {
+        "runtime": {
+          "TheFrogGames.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TheFrogGames.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TheFrogGames.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TheFrogGames.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
