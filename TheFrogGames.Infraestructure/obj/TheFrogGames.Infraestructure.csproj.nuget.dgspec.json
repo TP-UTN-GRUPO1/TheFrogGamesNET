@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj": {}
+    "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj": {
+    "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj",
         "projectName": "TheFrogGames.Application",
-        "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Application\\obj\\",
+        "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj",
+        "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj": {
-                "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj"
+              "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj"
               },
-              "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
-                "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj"
+              "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
+                "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj"
               }
             }
           }
@@ -72,24 +72,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj": {
+    "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj",
         "projectName": "TheFrogGames.Contracts",
-        "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\obj\\",
+        "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -137,24 +137,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
+    "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
         "projectName": "TheFrogGames.Domain",
-        "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
+        "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -202,24 +202,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj": {
+    "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj",
         "projectName": "TheFrogGames.Infraestructure",
-        "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\obj\\",
+        "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\TheFrogGames.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -234,11 +234,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj": {
-                "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj"
+              "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj": {
+                "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Application\\TheFrogGames.Application.csproj"
               },
-              "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
-                "projectPath": "C:\\Users\\marti\\source\\repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj"
+              "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
+                "projectPath": "C:\\Users\\Santiago\\Source\\Repos\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj"
               }
             }
           }
@@ -296,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

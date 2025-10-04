@@ -59,15 +59,12 @@ namespace TheFrogGames.Infraestructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Country")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("Date")
@@ -76,6 +73,9 @@ namespace TheFrogGames.Infraestructure.Migrations
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -90,7 +90,6 @@ namespace TheFrogGames.Infraestructure.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Province")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("RoleId")
