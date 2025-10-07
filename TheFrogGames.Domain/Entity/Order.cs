@@ -6,6 +6,6 @@ public class Order
     public int UserId { get; set; }
     public User User { get; set; }
     public DateTime OrderDate { get; set; }
-    public decimal TotalAmount { get; set; }
-    public List<OrderItem> OrderItems { get; set; }
+    public decimal Total => Items.Sum(i => i.Quantity * i.UnitPrice);
+    public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
 }

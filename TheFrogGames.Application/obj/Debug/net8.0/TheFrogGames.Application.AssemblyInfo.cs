@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheFrogGames.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21e5a7ce0ead7c2ab925c44a11fa1684f582b7c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a69b02c072b54a3b4125434388269b50dbeeb35")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheFrogGames.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheFrogGames.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

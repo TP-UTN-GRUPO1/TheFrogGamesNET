@@ -16,6 +16,7 @@ namespace TheFrogGames.Domain.Entity;
     public string? City { get; set; }
     public int RoleId { get; set; }
     public bool IsActive { get; set; } = true;
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 
 
 }
