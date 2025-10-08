@@ -13,9 +13,9 @@ public class UserService : IUserService
     {
         _userRepository = userRepository;
     }
-    public UserResponse GetUserById(int id)
+    public UserResponse GetById(int id)
     {
-        var user = _userRepository.GetUserById(id);
+        var user = _userRepository.GetById(id);
 
         var completeName = $"{user.Name} {user.LastName}";
 
@@ -27,39 +27,40 @@ public class UserService : IUserService
             IsActive = user.IsActive
         };
     }
-    public bool CreateUser(CreateUserRequest user)
+    public bool Create(CreateUserRequest user)
     {
         var newUser = new User
         {
             Name = user.Name,
             LastName = user.LastName,
             Email = user.Email,
-            Date =  user.Date,
+            Date = user.Date,
             Password = user.Password
         };
-        return _userRepository.CreateUser(newUser);
+        return _userRepository.Create(newUser);
     }
 
-    public List<UserResponse> GetAllUsers()
+    public List<UserResponse> GetAll()
     {
-       
+
         var userList = _userRepository
-            .GetAllUsers()
+            .GetAll()
             .Where(u => u.IsActive)
             .Select(u => new UserResponse
             {
+                Id = u.Id.ToString(),
                 CompleteName = $"{u.Name} {u.LastName}",
                 Email = u.Email,
-                Date =u.Date,
+                Date = u.Date,
                 IsActive = u.IsActive
 
             }).ToList();
         return userList;
     }
 
-    public bool UpdateUserStatus(UserStatusRequest request)
+    public bool UpdateUserStatus(ParcialUpdateUserRequest request)
     {
-        var user = _userRepository.GetUserById(request.Id);
+        var user = _userRepository.GetById(request.Id);
 
         if (user == null)
         {
@@ -70,5 +71,41 @@ public class UserService : IUserService
 
         return _userRepository.UpdateUserStatus(user);
     }
-    
+
+    public bool ParcialUpdateUser(int id, ParcialUpdateUserRequest user)
+    {
+        var ExistingUser = _userRepository.GetById(id);
+
+        if (ExistingUser == null)
+        {
+            return false;
+        }
+        ExistingUser.Name = user.Name ?? ExistingUser.Name;
+        ExistingUser.LastName = user.LastName ?? ExistingUser.LastName;
+
+        return _userRepository.ParcialUpdateUser(ExistingUser);
+    }
+    public bool Update(int id, UpdateUserRequest user)
+    {
+        var ExistingUser = _userRepository.GetById(id);
+        if (ExistingUser == null)
+        {
+            return false;
+        }
+        ExistingUser.Name = user.Name;
+        ExistingUser.LastName = user.LastName;
+        ExistingUser.Email = user.Email;
+        return _userRepository.Update(ExistingUser);
+    }
+    public bool Delete(int id)
+    {
+        var user = _userRepository.GetById(id);
+        if (user == null)
+        {
+            return false;
+        }
+
+        return _userRepository.Delete(user);
+    }
+
 }

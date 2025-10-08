@@ -6,8 +6,11 @@ namespace TheFrogGames.Application.Service;
 
 public interface IUserService
 {
-    UserResponse GetUserById(int id);
-    bool CreateUser(CreateUserRequest user);
-    List<UserResponse> GetAllUsers();
-    bool UpdateUserStatus(UserStatusRequest request);
+    UserResponse GetById(int id);
+    bool Create(CreateUserRequest user);
+    List<UserResponse> GetAll();
+    bool UpdateUserStatus(ParcialUpdateUserRequest request);
+    bool ParcialUpdateUser(int id, ParcialUpdateUserRequest user);
+    bool Update(int id, UpdateUserRequest user);
+    bool Delete(int id);
 }

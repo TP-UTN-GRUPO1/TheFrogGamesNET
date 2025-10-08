@@ -2,10 +2,8 @@
 
 namespace TheFrogGames.Application.Abstraction;
 
-public interface IUserRepository
+public interface IUserRepository : IBaseRepository<User>
 {
-    User GetUserById(int id);
-    bool CreateUser (User user);
-    List<User> GetAllUsers();
     bool UpdateUserStatus(User user);
+    bool ParcialUpdateUser(User user);
 }

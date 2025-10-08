@@ -68,3 +68,21 @@ C:\Users\marti\OneDrive\Desktop\RepoProg4\.net\TheFrogGames.Application\obj\Debu
 C:\Users\marti\OneDrive\Desktop\RepoProg4\.net\TheFrogGames.Application\obj\Debug\net8.0\refint\TheFrogGames.Application.dll
 C:\Users\marti\OneDrive\Desktop\RepoProg4\.net\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.pdb
 C:\Users\marti\OneDrive\Desktop\RepoProg4\.net\TheFrogGames.Application\obj\Debug\net8.0\ref\TheFrogGames.Application.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\bin\Debug\net8.0\TheFrogGames.Application.deps.json
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\bin\Debug\net8.0\TheFrogGames.Application.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\bin\Debug\net8.0\TheFrogGames.Application.pdb
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\bin\Debug\net8.0\TheFrogGames.Contracts.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\bin\Debug\net8.0\TheFrogGames.Domain.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\bin\Debug\net8.0\TheFrogGames.Contracts.pdb
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\bin\Debug\net8.0\TheFrogGames.Domain.pdb
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.csproj.AssemblyReference.cache
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.AssemblyInfoInputs.cache
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.AssemblyInfo.cs
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.csproj.CoreCompileInputs.cache
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.sourcelink.json
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogG.297D5258.Up2Date
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\refint\TheFrogGames.Application.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\TheFrogGames.Application.pdb
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Application\obj\Debug\net8.0\ref\TheFrogGames.Application.dll

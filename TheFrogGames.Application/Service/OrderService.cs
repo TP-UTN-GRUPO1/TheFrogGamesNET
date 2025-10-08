@@ -30,7 +30,7 @@ namespace TheFrogGames.Application.Service
                 return null;
             }
 
-            var user = _userRepository.GetUserById(order.UserId);
+            var user = _userRepository.GetById(order.UserId);
             string username = user != null ? user.Name : "Desconocido";
 
             var dto = new OrderDetailResponse
@@ -52,7 +52,7 @@ namespace TheFrogGames.Application.Service
 
         public int CreateOrder(CreateOrderRequest request)
         {
-            var user = _userRepository.GetUserById(request.UserId);
+            var user = _userRepository.GetById(request.UserId);
             if (user == null)
             {
                 throw new Exception("Usuario no válido");
@@ -100,7 +100,7 @@ namespace TheFrogGames.Application.Service
 
             foreach (var order in orders)
             {
-                var user = _userRepository.GetUserById(order.UserId);
+                var user = _userRepository.GetById(order.UserId);
                 string username = user != null ? user.Name : "Desconocido";
 
                 decimal total = order.Items.Sum(oi => oi.Quantity * oi.UnitPrice);

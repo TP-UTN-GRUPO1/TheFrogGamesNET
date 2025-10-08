@@ -3,29 +3,21 @@ using TheFrogGames.Domain.Entity;
 
 namespace TheFrogGames.Infraestructure.Persistence.Repository;
 
-public class UserRepository : IUserRepository
+public class UserRepository : BaseRepository<User>, IUserRepository
 {
     private readonly TheFrogGamesDbContext _context;
-    public UserRepository(TheFrogGamesDbContext context)
+    public UserRepository(TheFrogGamesDbContext context) : base(context)
     {
         _context = context;
     }
-    public User GetUserById(int id)
+    public bool UpdateUserStatus(User user)
     {
-        return _context.Users.FirstOrDefault(c => c.Id == id);
-    }
-    public bool CreateUser(User user)
-    {
-        _context.Users.Add(user);
+        _context.Users.Update(user);
         _context.SaveChanges();
         return true;
     }
-    public List<User> GetAllUsers()
-    {
-        return _context.Users.ToList();
-    }
 
-    public bool UpdateUserStatus(User user)
+    public bool ParcialUpdateUser(User user)
     {
         _context.Users.Update(user);
         _context.SaveChanges();
