@@ -82,8 +82,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Request\\UpdateUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T23:46:37.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T23:46:37.93Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Infraestructure\\Persistence\\Repository\\BaseRepository.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAuwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T22:34:33.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T22:34:33.999Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Application\\Abstraction\\IBaseRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T22:33:42.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T22:33:42.884Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Request\\ParcialUpdateUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T20:50:40.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T20:50:40.916Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Infraestructure\\Persistence\\Repository\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T20:47:53.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T20:47:53.389Z"
             },
             {
               "$type": "Document",
@@ -147,8 +142,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Infraestructure\\Persistence\\TheFrogGamesDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T20:47:48.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T20:47:48.764Z"
             },
             {
               "$type": "Document",
@@ -172,8 +166,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Response\\UserResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T20:47:36.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T20:47:36.617Z"
             },
             {
               "$type": "Document",
@@ -210,8 +203,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Application\\Service\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T20:47:17.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T20:47:17.707Z"
             },
             {
               "$type": "Document",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "..\\TheFrogGames.Application\\Abstraction\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T20:46:56.303Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T20:46:56.303Z"
             },
             {
               "$type": "Document",
@@ -248,8 +239,7 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAQwBQAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T20:46:39.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T20:46:39.931Z"
             }
           ]
         }
