@@ -361,3 +361,16 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Build
+bin/
+obj/
+
+# Base de datos local
+*.db
+*.db-shm
+*.db-wal
+
+# Archivos temporales
+*.cache
+*.pdb
+*.exe

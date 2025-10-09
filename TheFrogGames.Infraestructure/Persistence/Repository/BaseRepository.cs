@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 using TheFrogGames.Application.Abstraction;
 
 namespace TheFrogGames.Infraestructure.Persistence.Repository;
@@ -13,15 +14,15 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
         _dbSet = _context.Set<T>();
     }
 
-    public List<T> GetAll()
+    public virtual List<T> GetAll()
     {
         return _dbSet.ToList();
     }
-    public T? GetById(int id)
+    public virtual T? GetById(int id)
     {
         return _dbSet.Find(id);
     }
-    public bool Create(T entity)
+    public virtual bool Create(T entity)
     {
         _dbSet.Add(entity);
         _context.SaveChanges();
@@ -43,6 +44,9 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
 
         return true;
     }
-
+    public virtual List<T> GetByCriteria(Expression<Func<T, bool>> expression)
+    {
+        return _dbSet.Where(expression).ToList();
+    }
 
 }

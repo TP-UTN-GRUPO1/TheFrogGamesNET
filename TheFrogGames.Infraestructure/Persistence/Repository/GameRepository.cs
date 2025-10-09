@@ -3,15 +3,15 @@ using TheFrogGames.Domain.Entity;
 
 namespace TheFrogGames.Infraestructure.Persistence.Repository
 {
-    public class GameRepository : IGameRepository
+    public class GameRepository : BaseRepository<Game>, IGameRepository
     {
-        private readonly TheFrogGamesDbContext _db;
+        private readonly TheFrogGamesDbContext _context;
 
-        public GameRepository(TheFrogGamesDbContext db)
+        public GameRepository(TheFrogGamesDbContext context) : base(context)
         {
-            _db = db;
+            _context = context;
         }
-
+    
         public Game GetGameById(int id)
         {
             throw new NotImplementedException();

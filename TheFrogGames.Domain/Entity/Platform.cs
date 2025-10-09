@@ -1,7 +1,10 @@
 ﻿namespace TheFrogGames.Domain.Entity;
 
-public class Platform
+public class Platform : BaseEntity
 {
-    public int Id { get; set; }
+  
     public string Name { get; set; }
+
+    public ICollection<Game> Games { get; set; } = new List<Game>();
+
 }

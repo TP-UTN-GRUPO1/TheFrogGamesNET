@@ -2,7 +2,7 @@
 
 namespace TheFrogGames.Application.Abstraction
 {
-    public interface IGameRepository
+    public interface IGameRepository : IBaseRepository<Game>
     {
         Game GetGameById(int id);
     }

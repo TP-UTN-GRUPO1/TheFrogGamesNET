@@ -16,6 +16,10 @@ namespace TheFrogGames.Infraestructure.Persistence
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Game> Games { get; set; }
+    
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<Platform> Platforms { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,6 +39,19 @@ namespace TheFrogGames.Infraestructure.Persistence
                 .HasOne(oi => oi.Game)
                 .WithMany()
                 .HasForeignKey(oi => oi.GameId);
-        }
+
+            modelBuilder.Entity<Game>()
+                .HasMany(g => g.Platforms)
+                .WithMany(p => p.Games)
+                .UsingEntity(j => j.ToTable("GamePlatforms"));
+
+            modelBuilder.Entity<Game>()
+                .HasMany(g => g.Genres)
+                .WithMany(ge => ge.Games)
+                .UsingEntity(j => j.ToTable("GameGenres"));
+
+            
+        } 
+       
     }
 }
