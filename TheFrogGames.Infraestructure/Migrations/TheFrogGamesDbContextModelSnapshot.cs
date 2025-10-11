@@ -49,6 +49,21 @@ namespace TheFrogGames.Infraestructure.Migrations
                     b.ToTable("Games");
                 });
 
+            modelBuilder.Entity("TheFrogGames.Domain.Entity.Genre", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genres");
+                });
+
             modelBuilder.Entity("TheFrogGames.Domain.Entity.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -93,6 +108,21 @@ namespace TheFrogGames.Infraestructure.Migrations
                     b.HasIndex("OrderId");
 
                     b.ToTable("OrderItems");
+                });
+
+            modelBuilder.Entity("TheFrogGames.Domain.Entity.Platform", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Platforms");
                 });
 
             modelBuilder.Entity("TheFrogGames.Domain.Entity.User", b =>

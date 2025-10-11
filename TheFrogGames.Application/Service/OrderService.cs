@@ -1,14 +1,12 @@
 ﻿using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Application.Contracts.Responses;
 using TheFrogGames.Contracts.Order.Request;
-using TheFrogGames.Contracts.User.Response;
 using TheFrogGames.Domain.Entity;
 
 public class OrderService : IOrderService
 {
     private readonly IOrderRepository _orderRepo;
     private readonly IBaseRepository<OrderItem> _orderItemRepo;
-    private readonly IBaseRepository<User> _userRepo;
 
     public OrderService(IOrderRepository orderRepo,
                         IBaseRepository<OrderItem> orderItemRepo)
@@ -17,21 +15,15 @@ public class OrderService : IOrderService
         _orderItemRepo = orderItemRepo;
     }
 
-    public List<OrderResponse> GetAllOrders()
+    public List<OrderResponse> GetOrders()
     {
+        var orders = _orderRepo.GetAll();
 
-        var userList = _orderRepo
-            .GetAll()
-            .Select(u => new OrderResponse
-            {
-                Id = u.Id,
-                UserId = u.UserId,
-                OrderDate = u.OrderDate,
-                Total = u.Total,
+        var orderResponseList = orders.Select(o => MapToOrderResponse(o)).ToList();
 
-            }).ToList();
-        return userList;
+        return orderResponseList;
     }
+
 
     public OrderResponse? CreateOrder(CreateOrderRequest request)
     {
