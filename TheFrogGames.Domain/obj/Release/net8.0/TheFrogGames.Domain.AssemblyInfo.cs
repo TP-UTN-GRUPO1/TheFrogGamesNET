@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheFrogGames.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e981f31c96799f070e458390c74f7bf20cfdb3e9")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheFrogGames.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheFrogGames.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

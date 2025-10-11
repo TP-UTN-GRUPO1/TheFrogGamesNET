@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TheFrogGames.Application.Contracts.Responses;
 using TheFrogGames.Contracts.Order.Request;
+using TheFrogGames.Application.Abstraction;
 
 namespace TheFrogGames.Api.Controllers
 {
@@ -9,10 +10,10 @@ namespace TheFrogGames.Api.Controllers
     [Route("api/[controller]")]
     public class OrdersController : ControllerBase
     {
-        private readonly OrderService _orderService;
+        private readonly IOrderService _orderService;
         private OrderResponse? newId;
 
-        public OrdersController(OrderService orderService)
+        public OrdersController(IOrderService orderService)
         {
             _orderService = orderService;
         }
@@ -20,7 +21,7 @@ namespace TheFrogGames.Api.Controllers
         [HttpGet]
         public ActionResult<List<OrderResponse>> GetAll()
         {
-            var list = _orderService.GetAllOrders();
+            var list = _orderService.GetOrders();
             return Ok(list);
         }
         [HttpGet("{id}")]
@@ -47,8 +48,6 @@ namespace TheFrogGames.Api.Controllers
                 return BadRequest(new { error = ex.Message });
             }
         }
-        [HttpPut("{id}")]
-
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
