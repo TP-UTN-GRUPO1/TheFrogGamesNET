@@ -56,3 +56,15 @@ C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Domain\obj\Debug\net8.0\TheFrog
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Domain\obj\Debug\net8.0\refint\TheFrogGames.Domain.dll
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.pdb
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Domain\obj\Debug\net8.0\ref\TheFrogGames.Domain.dll
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\bin\Debug\net8.0\TheFrogGames.Domain.deps.json
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\bin\Debug\net8.0\TheFrogGames.Domain.dll
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\bin\Debug\net8.0\TheFrogGames.Domain.pdb
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.AssemblyInfoInputs.cache
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.AssemblyInfo.cs
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.sourcelink.json
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.dll
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\refint\TheFrogGames.Domain.dll
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.pdb
+C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Domain\obj\Debug\net8.0\ref\TheFrogGames.Domain.dll

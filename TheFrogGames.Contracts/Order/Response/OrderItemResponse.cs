@@ -1,11 +1,11 @@
-﻿namespace TheFrogGames.Contracts.Order.Response
+﻿namespace TheFrogGames.Application.Contracts.Responses
 {
     public class OrderItemResponse
     {
+        public int Id { get; set; }
         public int GameId { get; set; }
-        public string? Title { get; set; }
-        public decimal Price { get; set; }
         public int Quantity { get; set; }
-        public decimal Subtotal => Price * Quantity;
+        public decimal UnitPrice { get; set; }
     }
 }
+

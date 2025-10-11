@@ -1,11 +1,17 @@
-﻿namespace TheFrogGames.Application.Abstraction;
+﻿using System.Linq.Expressions;
 
-public interface IBaseRepository<T> where T : class
+namespace TheFrogGames.Application.Abstraction
 {
-    List<T> GetAll();
-    T? GetById(int id);
-    bool Create(T entity);
-    bool Update(T entity);
-    bool Delete(T entity);
+    public interface IBaseRepository<T> where T : class
+    {
+        List<T> GetAll(bool trackChanges = false);
+        T? GetById(object id, bool trackChanges = false);
+        IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges = false);
 
+        bool Create(T entity);
+        bool Update(T entity);
+        bool Delete(T entity);
+
+        int Save();  
+    }
 }

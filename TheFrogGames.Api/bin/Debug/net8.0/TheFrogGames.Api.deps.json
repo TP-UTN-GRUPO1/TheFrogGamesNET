@@ -14,7 +14,7 @@
           "Swashbuckle.AspNetCore": "6.6.2",
           "TheFrogGames.Application": "1.0.0",
           "TheFrogGames.Contracts": "1.0.0",
-          "TheFrogGames.Infraestructure": "1.0.0"
+          "TheFrogGames.Infrastructure": "1.0.0"
         },
         "runtime": {
           "TheFrogGames.Api.dll": {}
@@ -710,7 +710,7 @@
           }
         }
       },
-      "TheFrogGames.Infraestructure/1.0.0": {
+      "TheFrogGames.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.0",
@@ -718,7 +718,7 @@
           "TheFrogGames.Domain": "1.0.0"
         },
         "runtime": {
-          "TheFrogGames.Infraestructure.dll": {
+          "TheFrogGames.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1111,7 +1111,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "TheFrogGames.Infraestructure/1.0.0": {
+    "TheFrogGames.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

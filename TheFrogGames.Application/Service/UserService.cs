@@ -2,110 +2,111 @@
 using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Contracts.User.Request;
 using TheFrogGames.Contracts.User.Response;
+using TheFrogGames.Domain;
 using TheFrogGames.Domain.Entity;
 
-namespace TheFrogGames.Application.Service;
-
-public class UserService : IUserService
+namespace TheFrogGames.Application.Services
 {
-    private readonly IUserRepository _userRepository;
-    public UserService(IUserRepository userRepository)
+    public class UserService : IUserService
     {
-        _userRepository = userRepository;
-    }
-    public UserResponse GetById(int id)
-    {
-        var user = _userRepository.GetById(id);
+        private readonly IUserRepository _userRepo;
 
-        var completeName = $"{user.Name} {user.LastName}";
-
-        return new UserResponse
+        public UserService(IUserRepository userRepo)
         {
-            CompleteName = completeName,
-            Email = user.Email,
-            Date = user.Date,
-            IsActive = user.IsActive
-        };
-    }
-    public bool Create(CreateUserRequest user)
-    {
-        var newUser = new User
+            _userRepo = userRepo;
+        }
+
+        public List<UserResponse> GetAllUsers()
         {
-            Name = user.Name,
-            LastName = user.LastName,
-            Email = user.Email,
-            Date = user.Date,
-            Password = user.Password
-        };
-        return _userRepository.Create(newUser);
-    }
 
-    public List<UserResponse> GetAll()
-    {
+            var userList = _userRepo
+                .GetAll()
+                .Where(u => u.IsActive)
+                .Select(u => new UserResponse
+                {
+                    Id = u.Id,
+                    Name = u.Name,
+                    LastName = u.LastName,
+                    Email = u.Email,
+                    Date = u.Date,
+                    IsActive = u.IsActive
 
-        var userList = _userRepository
-            .GetAll()
-            .Where(u => u.IsActive)
-            .Select(u => new UserResponse
+                }).ToList();
+            return userList;
+        }
+
+        public UserResponse? GetUserById(int id)
+        {
+            var user = _userRepo.GetById(id, trackChanges: false);
+            if (user == null) return null;
+            return new UserResponse
             {
-                Id = u.Id.ToString(),
-                CompleteName = $"{u.Name} {u.LastName}",
-                Email = u.Email,
-                Date = u.Date,
-                IsActive = u.IsActive
-
-            }).ToList();
-        return userList;
-    }
-
-    public bool UpdateUserStatus(ParcialUpdateUserRequest request)
-    {
-        var user = _userRepository.GetById(request.Id);
-
-        if (user == null)
-        {
-            return false;
+                Id = user.Id,
+                Name = user.Name,
+                LastName = user.LastName,
+                Email = user.Email,
+                IsActive = user.IsActive
+            };
         }
 
-        user.IsActive = !user.IsActive;
-
-        return _userRepository.UpdateUserStatus(user);
-    }
-
-    public bool ParcialUpdateUser(int id, ParcialUpdateUserRequest user)
-    {
-        var ExistingUser = _userRepository.GetById(id);
-
-        if (ExistingUser == null)
+        public UserResponse? CreateUser(CreateUserRequest request)
         {
-            return false;
-        }
-        ExistingUser.Name = user.Name ?? ExistingUser.Name;
-        ExistingUser.LastName = user.LastName ?? ExistingUser.LastName;
+            var exist = _userRepo.GetByEmail(request.Email, trackChanges: false);
+            if (exist != null)
+            {
+                return null;
+            }
 
-        return _userRepository.ParcialUpdateUser(ExistingUser);
-    }
-    public bool Update(int id, UpdateUserRequest user)
-    {
-        var ExistingUser = _userRepository.GetById(id);
-        if (ExistingUser == null)
-        {
-            return false;
-        }
-        ExistingUser.Name = user.Name;
-        ExistingUser.LastName = user.LastName;
-        ExistingUser.Email = user.Email;
-        return _userRepository.Update(ExistingUser);
-    }
-    public bool Delete(int id)
-    {
-        var user = _userRepository.GetById(id);
-        if (user == null)
-        {
-            return false;
+            var user = new User
+            {
+                Name = request.Name,
+                LastName = request.LastName,
+                Email = request.Email,
+                Password = request.Password,
+            };
+
+            bool created = _userRepo.Create(user);
+            if (!created) return null;
+
+            return new UserResponse
+            {
+                Id = user.Id,
+                Name = user.Name,
+                LastName = user.LastName,
+                Email = user.Email,
+            };
         }
 
-        return _userRepository.Delete(user);
+        public UserResponse? UpdateUser(int id,UpdateUserRequest request)
+        {
+            var existing = _userRepo.GetById(request.Id, trackChanges: true);
+            if (existing == null) return null;
+
+            if (!string.IsNullOrEmpty(request.Name))
+                existing.Name = request.Name;
+            if (!string.IsNullOrEmpty(request.Email))
+                existing.Email = request.Email;
+            if (!string.IsNullOrEmpty(request.Password))
+                existing.Password = request.Password;
+
+            bool updated = _userRepo.Update(existing);
+            if (!updated) return null;
+
+            return new UserResponse
+            {
+                Id = existing.Id,
+                Name = existing.Name,
+                Email = existing.Email,
+            };
+        }
+
+        public bool DeleteUser(int id)
+        {
+            var existing = _userRepo.GetById(id, trackChanges: false);
+            if (existing == null) return false;
+            return _userRepo.Delete(existing);
+        }
+
     }
 
 }

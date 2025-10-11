@@ -1,14 +1,10 @@
 ﻿using TheFrogGames.Domain.Entity;
-
 namespace TheFrogGames.Application.Abstraction
 {
-    public interface IOrderRepository
+    public interface IOrderRepository : IBaseRepository<Order>
     {
-        Order? GetById(int id);
-        void Add(Order order);
-        List<Order> GetAll();
-        void Update(Order order);
-        void Delete(Order order);
+        List<Order> GetOrdersByUser(int userId, bool trackChanges = false);
+        Order? GetOrderWithItems(int orderId, bool trackChanges = false);
 
     }
 

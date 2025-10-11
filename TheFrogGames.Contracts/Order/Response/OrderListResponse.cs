@@ -1,11 +1,14 @@
 ﻿
-namespace TheFrogGames.Contracts.Order.Response
+
+namespace TheFrogGames.Application.Contracts.Responses
 {
-    public class OrderListResponse
+    public class OrderResponse
     {
-        public int OrderId { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public string? Username { get; set; }
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public DateTime OrderDate { get; set; }
         public decimal Total { get; set; }
+
+        public List<OrderItemResponse> Items { get; set; } = new List<OrderItemResponse>();
     }
 }

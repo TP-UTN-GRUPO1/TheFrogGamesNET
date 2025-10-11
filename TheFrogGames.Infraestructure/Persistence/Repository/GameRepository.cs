@@ -1,15 +1,13 @@
 ﻿using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Domain.Entity;
 
-namespace TheFrogGames.Infraestructure.Persistence.Repository
+namespace TheFrogGames.Infrastructure.Persistence.Repository
 {
-    public class GameRepository : IGameRepository
+    public class GameRepository : BaseRepository<Game>,IGameRepository
     {
-        private readonly TheFrogGamesDbContext _db;
 
-        public GameRepository(TheFrogGamesDbContext db)
+        public GameRepository(TheFrogGamesDbContext context) : base(context)
         {
-            _db = db;
         }
 
         public Game GetGameById(int id)

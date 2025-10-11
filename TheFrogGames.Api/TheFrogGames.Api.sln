@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Api", "TheFrogGames.Api.csproj", "{5C0C5411-17B5-413C-8CD2-E2DD1D530117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Infraestructure", "..\TheFrogGames.Infraestructure\TheFrogGames.Infraestructure.csproj", "{C277FCC1-0DAC-4EC9-89D9-974506951AB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Infrastructure", "..\TheFrogGames.Infraestructure\TheFrogGames.Infrastructure.csproj", "{C277FCC1-0DAC-4EC9-89D9-974506951AB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFrogGames.Application", "..\TheFrogGames.Application\TheFrogGames.Application.csproj", "{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}"
 EndProject

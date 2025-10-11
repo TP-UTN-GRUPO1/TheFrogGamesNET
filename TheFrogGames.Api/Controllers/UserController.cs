@@ -1,98 +1,59 @@
 ﻿using Contract.User.Request;
 using Microsoft.AspNetCore.Mvc;
-using TheFrogGames.Application.Service;
+using TheFrogGames.Application.Services;
 using TheFrogGames.Contracts.User.Request;
-using TheFrogGames.Contracts.User.Response;
 
 namespace TheFrogGames.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UserController : ControllerBase
-{
-    private readonly IUserService _userService;
-    public UserController(IUserService userService)
+    public class UsersController : ControllerBase
     {
-        _userService = userService;
-    }
-    [HttpGet]
-    public ActionResult<List<UserResponse>> GetAllUsers()
-    {
-        var usersList = _userService.GetAll();
-        if (!usersList.Any())
+        private readonly IUserService _userService;
+
+        public UsersController(IUserService userService)
         {
-            return NotFound();
-        }
-        return Ok(usersList);
-    }
-    [HttpGet("{id}")]
-    public IActionResult GetById(int id)
-    {
-        var user = _userService.GetById(id);
-
-        return Ok(user);
-    }
-
-    [HttpPost]
-
-    public ActionResult CreateUser([FromBody] CreateUserRequest user)
-    {
-        var isCreated = _userService.Create(user);
-        if (!isCreated)
-        {
-            return BadRequest("No se pudo crear el usuario");
-        }
-        return Ok("Usuario creado");
-    }
-
-
-    [HttpPatch("{id}/status")]
-    public ActionResult UpdateUserStatus([FromRoute] int id, [FromBody] ParcialUpdateUserRequest user)
-    {
-        user.Id = id;
-        var isActive = _userService.UpdateUserStatus(user);
-        if (!isActive)
-        {
-            return Conflict("No se puede dar de baja al usuario");
-        }
-        return NoContent();
-    }
-
-    [HttpPatch("{id}")]
-    public ActionResult ParcialUpdateUser([FromRoute] int id, [FromBody] ParcialUpdateUserRequest user)
-    {
-        var isParcialUpdated = _userService.ParcialUpdateUser(id, user);
-
-        if (!isParcialUpdated)
-        {
-            return Conflict("No se pudo actualizar el usuario parcialmente");
+            _userService = userService;
         }
 
-        return NoContent();
-    }
-
-    [HttpPut("{id}")]
-    public ActionResult UpdateUser([FromRoute] int id, [FromBody] UpdateUserRequest user)
-    {
-        var isUpdated = _userService.Update(id, user);
-
-        if (!isUpdated)
+        [HttpGet]
+        public IActionResult GetAll()
         {
-            return Conflict("Usuario no se pudo actualizar");
+            var users = _userService.GetAllUsers();
+            return Ok(users);
         }
 
-        return NoContent();
-    }
-
-    [HttpDelete("{id}")]
-    public ActionResult DeleteUser([FromRoute] int id)
-    {
-        var isDeleted = _userService.Delete(id);
-        if (!isDeleted)
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
         {
-            return BadRequest("Error al eliminar el usuario");
+            var user = _userService.GetUserById(id);
+            if (user == null) return NotFound();
+            return Ok(user);
         }
 
-        return NoContent();
+        [HttpPost]
+        public IActionResult Create([FromBody] CreateUserRequest request)
+        {
+            var response = _userService.CreateUser(request);
+            if (response == null) return BadRequest("No se pudo crear usuario");
+            return CreatedAtAction(nameof(GetById), new { id = response.Id }, response);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] UpdateUserRequest request)
+        {
+            request.Id = id;
+            var response = _userService.UpdateUser(id,request);
+            if (response == null) return NotFound();
+            return Ok(response);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            bool deleted = _userService.DeleteUser(id);
+            if (!deleted) return NotFound();
+            return NoContent();
+        }
     }
-}
+

@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using TheFrogGames.Application.Abstraction;
-using TheFrogGames.Application.Service;
-using TheFrogGames.Infraestructure.Persistence;
-using TheFrogGames.Infraestructure.Persistence.Repository;
+using TheFrogGames.Application.Services;
+using TheFrogGames.Infrastructure.Persistence;
+using TheFrogGames.Infrastructure.Persistence.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +13,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IGameRepository, GameRepository>();
+builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 builder.Services.AddScoped<OrderService>();  
 builder.Services.AddDbContext<TheFrogGamesDbContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
