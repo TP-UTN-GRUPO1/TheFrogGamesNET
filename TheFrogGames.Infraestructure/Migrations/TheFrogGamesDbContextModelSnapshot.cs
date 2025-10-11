@@ -3,7 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using TheFrogGames.Infraestructure.Persistence;
+using TheFrogGames.Infrastructure.Persistence;
 
 #nullable disable
 

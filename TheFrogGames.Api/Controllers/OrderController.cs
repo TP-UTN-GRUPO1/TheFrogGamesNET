@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TheFrogGames.Application.Service;
+using TheFrogGames.Application.Contracts.Responses;
 using TheFrogGames.Contracts.Order.Request;
-using TheFrogGames.Contracts.Order.Response;
 
 namespace TheFrogGames.Api.Controllers
 {
@@ -11,6 +10,7 @@ namespace TheFrogGames.Api.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly OrderService _orderService;
+        private OrderResponse? newId;
 
         public OrdersController(OrderService orderService)
         {
@@ -18,15 +18,15 @@ namespace TheFrogGames.Api.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<OrderListResponse>> GetAll()
+        public ActionResult<List<OrderResponse>> GetAll()
         {
             var list = _orderService.GetAllOrders();
             return Ok(list);
         }
         [HttpGet("{id}")]
-        public ActionResult<OrderDetailResponse> Get(int id)
+        public ActionResult<OrderItemResponse> Get(int id)
         {
-            var dto = _orderService.GetOrder(id);
+            var dto = _orderService.GetOrdersByUser(id);
             if (dto == null)
             {
                 return NotFound();
@@ -39,8 +39,8 @@ namespace TheFrogGames.Api.Controllers
         {
             try
             {
-                int newId = _orderService.CreateOrder(request);
-                return CreatedAtAction(nameof(Get), new { id = newId }, null);
+                newId = _orderService.CreateOrder(request);
+                return CreatedAtAction(nameof(Get), new { id =  newId }, null);
             }
             catch (Exception ex)
             {
@@ -48,18 +48,7 @@ namespace TheFrogGames.Api.Controllers
             }
         }
         [HttpPut("{id}")]
-        public ActionResult Update(int id, [FromBody] CreateOrderRequest request)
-        {
-            try
-            {
-                _orderService.UpdateOrder(id, request);
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
-        }
+
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TheFrogGames.Domain.Entity;
 
-namespace TheFrogGames.Infraestructure.Persistence
+namespace TheFrogGames.Infrastructure.Persistence
 {
     public class TheFrogGamesDbContext : DbContext
     {

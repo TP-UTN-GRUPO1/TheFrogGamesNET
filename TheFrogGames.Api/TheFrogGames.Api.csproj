@@ -19,7 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TheFrogGames.Application\TheFrogGames.Application.csproj" />
     <ProjectReference Include="..\TheFrogGames.Contracts\TheFrogGames.Contracts.csproj" />
-    <ProjectReference Include="..\TheFrogGames.Infraestructure\TheFrogGames.Infraestructure.csproj" />
+    <ProjectReference Include="..\TheFrogGames.Infraestructure\TheFrogGames.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

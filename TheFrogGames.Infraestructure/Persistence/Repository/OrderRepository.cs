@@ -2,48 +2,38 @@
 using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Domain.Entity;
 
-namespace TheFrogGames.Infraestructure.Persistence.Repository
+
+
+namespace TheFrogGames.Infrastructure.Persistence.Repository
 {
-    public class OrderRepository : IOrderRepository
+    public class OrderRepository : BaseRepository<Order>, IOrderRepository
     {
-        private readonly TheFrogGamesDbContext _db;
-
-        public OrderRepository(TheFrogGamesDbContext db)
+        public OrderRepository(TheFrogGamesDbContext context) : base(context)
         {
-            _db = db;
         }
 
-        public Order? GetById(int id)
+        public List<Order> GetOrdersByUser(int userId, bool trackChanges = false)
         {
-            return _db.Orders
-                .Include(o => o.Items)
-                    .ThenInclude(oi => oi.Game)
-                .FirstOrDefault(o => o.Id == id);
+            var query = _context.Set<Order>()
+                                .Where(o => o.UserId == userId);
+
+            if (!trackChanges)
+                query = query.AsNoTracking();
+
+            return query.ToList();
         }
 
-        public void Add(Order order)
+        public Order? GetOrderWithItems(int orderId, bool trackChanges = false)
         {
-            _db.Orders.Add(order);
-            _db.SaveChanges();
-        }
+            var query = _context.Set<Order>()
+                                .Include(o => o.Items)
+                                .Where(o => o.Id == orderId);
 
-        public List<Order> GetAll()
-        {
-            return _db.Orders
-                .Include(o => o.User)
-                .Include(o => o.Items)
-                .ToList();
-        }
-        public void Update(Order order)
-        {
-            _db.Orders.Update(order);
-            _db.SaveChanges();
-        }
-        public void Delete(Order order)
-        {
-            _db.Orders.Remove(order);
-            _db.SaveChanges();
+            if (!trackChanges)
+                query = query.AsNoTracking();
+
+            return query.FirstOrDefault();
         }
     }
-
 }
+

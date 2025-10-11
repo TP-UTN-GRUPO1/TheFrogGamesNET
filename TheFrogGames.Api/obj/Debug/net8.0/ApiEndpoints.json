@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TheFrogGames.Contracts.Order.Response.OrderListResponse, TheFrogGames.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[TheFrogGames.Application.Contracts.Responses.OrderResponse, TheFrogGames.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -51,7 +51,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "TheFrogGames.Contracts.Order.Response.OrderDetailResponse",
+        "Type": "TheFrogGames.Application.Contracts.Responses.OrderItemResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -63,7 +63,7 @@
   },
   {
     "ContainingType": "TheFrogGames.Api.Controllers.OrdersController",
-    "Method": "Update",
+    "Method": "Delete",
     "RelativePath": "api/Orders/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -72,11 +72,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "request",
-        "Type": "TheFrogGames.Contracts.Order.Request.CreateOrderRequest",
         "IsRequired": true
       }
     ],
@@ -99,35 +94,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TheFrogGames.Api.Controllers.UserController",
-    "Method": "GetAllUsers",
-    "RelativePath": "api/User",
+    "ContainingType": "TheFrogGames.Api.Controllers.UsersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Users",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[TheFrogGames.Contracts.User.Response.UserResponse, TheFrogGames.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
-    "ContainingType": "TheFrogGames.Api.Controllers.UserController",
-    "Method": "CreateUser",
-    "RelativePath": "api/User",
+    "ContainingType": "TheFrogGames.Api.Controllers.UsersController",
+    "Method": "Create",
+    "RelativePath": "api/Users",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
+        "Name": "request",
         "Type": "Contract.User.Request.CreateUserRequest",
         "IsRequired": true
       }
@@ -135,9 +120,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TheFrogGames.Api.Controllers.UserController",
+    "ContainingType": "TheFrogGames.Api.Controllers.UsersController",
     "Method": "GetById",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/Users/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -151,30 +136,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TheFrogGames.Api.Controllers.UserController",
-    "Method": "ParcialUpdateUser",
-    "RelativePath": "api/User/{id}",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "TheFrogGames.Contracts.User.Request.ParcialUpdateUserRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TheFrogGames.Api.Controllers.UserController",
-    "Method": "UpdateUser",
-    "RelativePath": "api/User/{id}",
+    "ContainingType": "TheFrogGames.Api.Controllers.UsersController",
+    "Method": "Update",
+    "RelativePath": "api/Users/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -185,7 +149,7 @@
         "IsRequired": true
       },
       {
-        "Name": "user",
+        "Name": "request",
         "Type": "TheFrogGames.Contracts.User.Request.UpdateUserRequest",
         "IsRequired": true
       }
@@ -193,9 +157,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "TheFrogGames.Api.Controllers.UserController",
-    "Method": "DeleteUser",
-    "RelativePath": "api/User/{id}",
+    "ContainingType": "TheFrogGames.Api.Controllers.UsersController",
+    "Method": "Delete",
+    "RelativePath": "api/Users/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -203,27 +167,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "TheFrogGames.Api.Controllers.UserController",
-    "Method": "UpdateUserStatus",
-    "RelativePath": "api/User/{id}/status",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "user",
-        "Type": "TheFrogGames.Contracts.User.Request.ParcialUpdateUserRequest",
         "IsRequired": true
       }
     ],

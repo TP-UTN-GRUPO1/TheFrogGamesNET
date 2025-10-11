@@ -2,15 +2,14 @@
 using TheFrogGames.Contracts.User.Request;
 using TheFrogGames.Contracts.User.Response;
 
-namespace TheFrogGames.Application.Service;
-
-public interface IUserService
+namespace TheFrogGames.Application.Services
 {
-    UserResponse GetById(int id);
-    bool Create(CreateUserRequest user);
-    List<UserResponse> GetAll();
-    bool UpdateUserStatus(ParcialUpdateUserRequest request);
-    bool ParcialUpdateUser(int id, ParcialUpdateUserRequest user);
-    bool Update(int id, UpdateUserRequest user);
-    bool Delete(int id);
+    public interface IUserService
+    {
+        List<UserResponse> GetAllUsers();
+        UserResponse? GetUserById(int id);
+        UserResponse? CreateUser(CreateUserRequest request);
+        UserResponse? UpdateUser(int id, UpdateUserRequest request);
+        bool DeleteUser(int id);
+    }
 }
