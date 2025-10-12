@@ -1,8 +1,8 @@
 ﻿namespace TheFrogGames.Domain.Entity;
 
-public class Game
+public class Game : BaseEntity
 {
-    public int Id { get; set; }
+  
     public string? Title { get; set; }
     public decimal Price { get; set; }
     public string? Developer { get; set; }
@@ -10,4 +10,7 @@ public class Game
     public int Rating { get; set; }
     public Boolean Available { get; set; }
     public int Sold { get; set; }
+
+    public ICollection<Platform> Platforms { get; set; } = new List<Platform>();
+    public ICollection<Genre>Genres { get; set; } = new List<Genre>();
 }

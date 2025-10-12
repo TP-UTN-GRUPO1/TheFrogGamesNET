@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marti\\OneDrive\\Desktop\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {}
+    "C:\\Users\\Ale\\Desktop\\TP\\Server Net\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marti\\OneDrive\\Desktop\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
+    "C:\\Users\\Ale\\Desktop\\TP\\Server Net\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marti\\OneDrive\\Desktop\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ale\\Desktop\\TP\\Server Net\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
         "projectName": "TheFrogGames.Domain",
-        "projectPath": "C:\\Users\\marti\\OneDrive\\Desktop\\TheFrogGamesNET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
-        "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marti\\OneDrive\\Desktop\\TheFrogGamesNET\\TheFrogGames.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Ale\\Desktop\\TP\\Server Net\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ale\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ale\\Desktop\\TP\\Server Net\\TheFrogGames.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ale\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -68,3 +68,15 @@ C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Contracts\obj\Debug
 C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Contracts\obj\Debug\net8.0\refint\TheFrogGames.Contracts.dll
 C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.pdb
 C:\Users\marti\OneDrive\Desktop\TheFrogGamesNET\TheFrogGames.Contracts\obj\Debug\net8.0\ref\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Contracts.deps.json
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Contracts.pdb
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.AssemblyInfoInputs.cache
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.AssemblyInfo.cs
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.sourcelink.json
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\refint\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.pdb
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\ref\TheFrogGames.Contracts.dll
