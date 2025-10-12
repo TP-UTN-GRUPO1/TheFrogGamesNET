@@ -1,8 +1,9 @@
 ﻿using System.Linq.Expressions;
+using TheFrogGames.Domain.Entity;
 
 namespace TheFrogGames.Application.Abstraction
 {
-    public interface IBaseRepository<T> where T : class
+    public interface IBaseRepository<T> where T : class 
     {
         List<T> GetAll(bool trackChanges = false);
         T? GetById(object id, bool trackChanges = false);
@@ -12,6 +13,10 @@ namespace TheFrogGames.Application.Abstraction
         bool Update(T entity);
         bool Delete(T entity);
 
-        int Save();  
+        List<T> GetByCriteria(Expression<Func<T, bool>> expression);
+
+        int Save();
+
+       
     }
 }

@@ -201,7 +201,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Ale\\Desktop\\TP\\Server Net\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
+                "projectPath": "C:\\Users\\Ale\\Desktop\\TP\\Server Net\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

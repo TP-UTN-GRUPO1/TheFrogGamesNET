@@ -57,10 +57,51 @@ namespace TheFrogGames.Infrastructure.Persistence.Repository
             _dbSet.Remove(entity);
             return Save() > 0;
         }
-
+        public List<T> GetByCriteria(Expression<Func<T, bool>> expression)
+        {
+            
+            return _dbSet.Where(expression).AsNoTracking().ToList();
+        }
         public int Save()
         {
             return _context.SaveChanges();
+        }
+        public async Task<List<T>> GetAllAsync(bool trackChanges = false)
+        {
+            return trackChanges
+                ? await _dbSet.ToListAsync()
+                : await _dbSet.AsNoTracking().ToListAsync();
+        }
+
+        public async Task<T?> GetByIdAsync(object id, bool trackChanges = false)
+        {
+            var entity = await _dbSet.FindAsync(id);
+            if (entity != null && !trackChanges)
+                _context.Entry(entity).State = EntityState.Detached;
+
+            return entity;
+        }
+
+        public async Task CreateAsync(T entity)
+        {
+            await _dbSet.AddAsync(entity);
+        }
+
+        public async Task UpdateAsync(T entity)
+        {
+            _dbSet.Update(entity);
+            await Task.CompletedTask;
+        }
+
+        public async Task DeleteAsync(T entity)
+        {
+            _dbSet.Remove(entity);
+            await Task.CompletedTask;
+        }
+
+        public async Task<int> SaveChangesAsync()
+        {
+            return await _context.SaveChangesAsync();
         }
     }
 }

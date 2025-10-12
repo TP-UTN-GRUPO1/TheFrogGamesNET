@@ -80,3 +80,7 @@ C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFr
 C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\refint\TheFrogGames.Contracts.dll
 C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.pdb
 C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\ref\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Domain.dll
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Domain.pdb
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.csproj.AssemblyReference.cache
+C:\Users\Ale\Desktop\TP\Server Net\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogG.2F0B1428.Up2Date

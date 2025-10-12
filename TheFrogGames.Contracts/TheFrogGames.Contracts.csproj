@@ -12,4 +12,8 @@
     <None Remove="User\UserResponse\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TheFrogGames.Domain\TheFrogGames.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

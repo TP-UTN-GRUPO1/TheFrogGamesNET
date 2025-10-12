@@ -695,6 +695,9 @@
         }
       },
       "TheFrogGames.Contracts/1.0.0": {
+        "dependencies": {
+          "TheFrogGames.Domain": "1.0.0"
+        },
         "runtime": {
           "TheFrogGames.Contracts.dll": {
             "assemblyVersion": "1.0.0.0",

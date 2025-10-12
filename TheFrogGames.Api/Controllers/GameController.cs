@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TheFrogGames.Application.Contracts.Game.Request;
+using TheFrogGames.Contracts.Game.Request;
 using TheFrogGames.Application.Service;
 using TheFrogGames.Contracts.Game.Response;
+using TheFrogGames.Application.Abstraction;
+
+using System.Threading.Tasks;
 
 namespace TheFrogGames.Api.Controllers
 {
@@ -17,64 +20,33 @@ namespace TheFrogGames.Api.Controllers
         [HttpGet]
         public ActionResult<List<GameResponse>> GetAll()
         {
-            var list = _gameService.GetGame();
-            return Ok(list);
+            var listGame = _gameService.GetAll();
+            if (!listGame.Any())
+            {
+                return NotFound();
+            }
+            return Ok(listGame);
         }
         [HttpPost]
-        public IActionResult Create([FromBody] CreateGameRequest request)
+        public ActionResult Create([FromBody] CreateGameRequest game)
         {
-            try
+            var isCreated = _gameService.Create(game);
+
+            if (!isCreated)
             {
-                var newGame = _gameService.CreateGame(request);
-                return CreatedAtAction(
-                    nameof(GetAll),
-                    new { id = newGame.Id },
-                    newGame);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, $"Error interno del servidor: {ex.Message}");
-            }
-        }
-        [HttpPut]
-        public IActionResult Update([FromBody] UpdateGameRequest request)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
+                return Conflict("Error al crear el producto");
             }
 
-            try
-            {
-                var updatedGame = _gameService.UpdateGame(request);
-                return Ok(updatedGame);
-            }
-            catch (Exception ex) when (ex.Message.Contains("no encontrado"))
-            {
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, $"Error: {ex.Message}");
-            }
+            return CreatedAtAction(nameof(GetById), new { id = game.Id }, game.Id);
         }
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            if (id <= 0)
-            {
-                return BadRequest("El ID del juego debe ser positivo.");
-            }
-            bool success = _gameService.DeleteGame(id);
 
-            if (success)
-            {
-                return NoContent();
-            }
-            else
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error al intentar eliminar el juego.");
-            }
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var game = _gameService.GetGameById(id);
+            if (game == null) return NotFound();
+            return Ok(game);
         }
+
     }
 }

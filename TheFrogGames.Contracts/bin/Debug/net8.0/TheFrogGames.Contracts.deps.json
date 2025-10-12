@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "TheFrogGames.Contracts/1.0.0": {
+        "dependencies": {
+          "TheFrogGames.Domain": "1.0.0"
+        },
         "runtime": {
           "TheFrogGames.Contracts.dll": {}
+        }
+      },
+      "TheFrogGames.Domain/1.0.0": {
+        "runtime": {
+          "TheFrogGames.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "TheFrogGames.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TheFrogGames.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

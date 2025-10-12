@@ -1,8 +1,8 @@
 ﻿namespace TheFrogGames.Domain.Entity;
 
-public class Order
+public class Order : BaseEntity
 {
-    public int Id { get; set; }
+  
     public int UserId { get; set; }
     public User User { get; set; }
     public DateTime OrderDate { get; set; }
