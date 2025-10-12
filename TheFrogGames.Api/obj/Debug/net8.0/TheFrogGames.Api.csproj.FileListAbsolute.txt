@@ -690,3 +690,11 @@ C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\obj\Debug\net8.0\staticweba
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\obj\Debug\net8.0\TheFrogG.A8FCB362.Up2Date
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\obj\Debug\net8.0\TheFrogGames.Api.genruntimeconfig.cache
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\obj\Debug\net8.0\ref\TheFrogGames.Api.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

@@ -7,4 +7,5 @@ public class UserResponse
     public string Email { get; set; }
     public DateTime Date { get; set; }
     public bool IsActive { get; set; }
+    public int RoleId { get; set; }
 }

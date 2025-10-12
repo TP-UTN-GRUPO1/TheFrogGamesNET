@@ -1,6 +1,8 @@
-﻿namespace TheFrogGames.Application.Abstraction;
+﻿using TheFrogGames.Domain.Entity;
 
-public interface IBaseRepository<T> where T : class
+namespace TheFrogGames.Application.Abstraction;
+
+public interface IBaseRepository<T> where T : BaseEntity
 {
     List<T> GetAll();
     T? GetById(int id);

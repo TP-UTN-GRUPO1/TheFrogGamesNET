@@ -1,8 +1,10 @@
 ﻿using Contract.User.Request;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TheFrogGames.Application.Service;
 using TheFrogGames.Contracts.User.Request;
 using TheFrogGames.Contracts.User.Response;
+using TheFrogGames.Domain.Entity;
 
 namespace TheFrogGames.Api.Controllers;
 
@@ -15,6 +17,7 @@ public class UserController : ControllerBase
     {
         _userService = userService;
     }
+
     [HttpGet]
     public ActionResult<List<UserResponse>> GetAllUsers()
     {

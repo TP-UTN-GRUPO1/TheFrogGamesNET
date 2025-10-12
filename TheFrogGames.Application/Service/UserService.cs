@@ -52,7 +52,8 @@ public class UserService : IUserService
                 CompleteName = $"{u.Name} {u.LastName}",
                 Email = u.Email,
                 Date = u.Date,
-                IsActive = u.IsActive
+                IsActive = u.IsActive,
+                RoleId = u.RoleId,
 
             }).ToList();
         return userList;

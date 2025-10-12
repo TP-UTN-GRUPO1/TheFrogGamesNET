@@ -1,9 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TheFrogGames.Application.Abstraction;
+using TheFrogGames.Domain.Entity;
 
 namespace TheFrogGames.Infraestructure.Persistence.Repository;
 
-public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
+public abstract class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
 {
     private readonly TheFrogGamesDbContext _context;
     private readonly DbSet<T> _dbSet;
@@ -13,15 +14,16 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
         _dbSet = _context.Set<T>();
     }
 
-    public List<T> GetAll()
+    public virtual List<T> GetAll()
     {
         return _dbSet.ToList();
     }
-    public T? GetById(int id)
+    public virtual T? GetById(int id)
     {
+        _dbSet.FirstOrDefault(x => x.Id == id);
         return _dbSet.Find(id);
     }
-    public bool Create(T entity)
+    public virtual bool Create(T entity)
     {
         _dbSet.Add(entity);
         _context.SaveChanges();
