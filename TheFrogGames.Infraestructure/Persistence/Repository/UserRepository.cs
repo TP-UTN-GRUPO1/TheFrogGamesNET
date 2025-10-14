@@ -1,21 +1,36 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TheFrogGames.Application.Abstraction;
+using TheFrogGames.Contracts.User.Request;
 using TheFrogGames.Domain.Entity;
+using TheFrogGames.Infrastructure.Persistence;
+using TheFrogGames.Infrastructure.Persistence.Repository;
 
-namespace TheFrogGames.Infrastructure.Persistence.Repository
+namespace TheFrogGames.Infraestructure.Persistence.Repository;
+
+public class UserRepository : BaseRepository<User>, IUserRepository
 {
-    public class UserRepository : BaseRepository<User>, IUserRepository
+    private readonly TheFrogGamesDbContext _context;
+    public UserRepository(TheFrogGamesDbContext context) : base(context)
     {
-        public UserRepository(TheFrogGamesDbContext context) : base(context)
-        {
-        }
+        _context = context;
+    }
+    public User? GetUserByEmailAndPassword(LoginUserRequest request)
+    {
+        return _context.Users
+            .Include(x => x.Role)
+            .FirstOrDefault(x => x.Email == request.Email && x.Password == request.Password);
+    }
+    public bool UpdateUserStatus(User user)
+    {
+        _context.Users.Update(user);
+        _context.SaveChanges();
+        return true;
+    }
 
-        public User? GetByEmail(string email, bool trackChanges = false)
-        {
-            var query = _context.Set<User>().Where(u => u.Email == email);
-            if (!trackChanges)
-                query = query.AsNoTracking();
-            return query.FirstOrDefault();
-        }
+    public bool ParcialUpdateUser(User user)
+    {
+        _context.Users.Update(user);
+        _context.SaveChanges();
+        return true;
     }
 }

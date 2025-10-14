@@ -49,6 +49,18 @@ namespace TheFrogGames.Infrastructure.Persistence
                 .HasMany(g => g.Genres)
                 .WithMany(ge => ge.Games)
                 .UsingEntity(j => j.ToTable("GameGenres"));
+
+            modelBuilder.Entity<User>().HasData(
+                new User { Id = 1, Name = "SysAdmin", LastName = "SysAdmin", Date = new DateTime(2000, 1, 1), Email = "sysadmin@demo.com", Password = "1234", RoleId = (int)TypeRole.SysAdmin },
+                new User { Id = 2, Name = "Admin", LastName = "Admin", Date = new DateTime(2000, 1, 1), Email = "admin@demo.com", Password = "1234", RoleId = (int)TypeRole.Admin },
+                new User { Id = 3, Name = "User", LastName = "User", Date = new DateTime(2000, 1, 1), Email = "user@demo.com", Password = "1234", RoleId = (int)TypeRole.User }
+
+                );
+            modelBuilder.Entity<Role>().HasData(
+                new Role { Id = 1, Name = nameof(TypeRole.SysAdmin) },
+                new Role { Id = 2, Name = nameof(TypeRole.Admin) },
+                new Role { Id = 3, Name = nameof(TypeRole.User) }
+            );
         }
     }
 }

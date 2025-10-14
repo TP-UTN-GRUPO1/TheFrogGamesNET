@@ -3,8 +3,6 @@
 namespace Contract.User.Request;
 public class CreateUserRequest
 {
-    public int Id { get; set; }
-
     [Required(ErrorMessage = "El nombre es requerido")]
     public string Name { get; set; } = string.Empty;
 
@@ -18,5 +16,7 @@ public class CreateUserRequest
     public DateTime Date { get; set; }
     [Required(ErrorMessage = "Contraseña requerida")]
     public string Password { get; set; } = string.Empty;
+
+    public int RoleId { get; set; } = 3;
 
 }

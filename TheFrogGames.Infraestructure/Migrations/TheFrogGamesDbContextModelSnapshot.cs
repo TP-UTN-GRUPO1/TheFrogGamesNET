@@ -153,6 +153,38 @@ namespace TheFrogGames.Infraestructure.Migrations
                     b.ToTable("Platforms");
                 });
 
+            modelBuilder.Entity("TheFrogGames.Domain.Entity.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Role");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "SysAdmin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "User"
+                        });
+                });
+
             modelBuilder.Entity("TheFrogGames.Domain.Entity.User", b =>
                 {
                     b.Property<int>("Id")
@@ -198,7 +230,44 @@ namespace TheFrogGames.Infraestructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Date = new DateTime(2000, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "sysadmin@demo.com",
+                            IsActive = true,
+                            LastName = "SysAdmin",
+                            Name = "SysAdmin",
+                            Password = "1234",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Date = new DateTime(2000, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "admin@demo.com",
+                            IsActive = true,
+                            LastName = "Admin",
+                            Name = "Admin",
+                            Password = "1234",
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Date = new DateTime(2000, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "user@demo.com",
+                            IsActive = true,
+                            LastName = "User",
+                            Name = "User",
+                            Password = "1234",
+                            RoleId = 3
+                        });
                 });
 
             modelBuilder.Entity("GameGenre", b =>
@@ -259,6 +328,17 @@ namespace TheFrogGames.Infraestructure.Migrations
                     b.Navigation("Game");
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("TheFrogGames.Domain.Entity.User", b =>
+                {
+                    b.HasOne("TheFrogGames.Domain.Entity.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("TheFrogGames.Domain.Entity.Order", b =>
