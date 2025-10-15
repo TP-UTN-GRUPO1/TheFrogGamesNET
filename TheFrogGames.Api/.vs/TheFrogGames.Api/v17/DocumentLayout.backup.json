@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}|..\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.contracts\\user\\request\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C277FCC1-0DAC-4EC9-89D9-974506951AB4}|..\\TheFrogGames.Infraestructure\\TheFrogGames.Infrastructure.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.infraestructure\\persistence\\thefroggamesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C277FCC1-0DAC-4EC9-89D9-974506951AB4}|..\\TheFrogGames.Infraestructure\\TheFrogGames.Infrastructure.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.infraestructure\\externalservices\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\abstraction\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\abstraction\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C277FCC1-0DAC-4EC9-89D9-974506951AB4}|..\\TheFrogGames.Infraestructure\\TheFrogGames.Infrastructure.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.infraestructure\\persistence\\thefroggamesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0814AA5C-E4AD-4A8C-AC9A-3EAF7BD84331}|..\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.domain\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}|..\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.contracts\\user\\request\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\abstraction\\externalservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -30,23 +50,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{0814AA5C-E4AD-4A8C-AC9A-3EAF7BD84331}|..\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5C0C5411-17B5-413C-8CD2-E2DD1D530117}|TheFrogGames.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\abstraction\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83FDBC00-5F8F-479B-AA3F-41EAD7AB8C1A}|..\\TheFrogGames.Application\\TheFrogGames.Application.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.application\\abstraction\\ibaserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEE1F1F6-72A6-4AD4-92E1-D8B26A3EDDFD}|..\\TheFrogGames.Contracts\\TheFrogGames.Contracts.csproj|c:\\users\\santiago\\desktop\\tp-prog 4\\thefroggames.contracts\\user\\request\\loginuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -67,11 +70,11 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 132,
+      "VerticalTabListWidth": 189,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Bookmark",
@@ -91,20 +94,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Domain\\Entities\\Game.cs",
+              "RelativeDocumentMoniker": "..\\TheFrogGames.Domain\\Entities\\Game.cs",
+              "ToolTip": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Domain\\Entities\\Game.cs",
+              "RelativeToolTip": "..\\TheFrogGames.Domain\\Entities\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T22:46:46.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Infraestructure\\ExternalServices\\AuthService.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Infraestructure\\ExternalServices\\AuthService.cs",
               "ToolTip": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Infraestructure\\ExternalServices\\AuthService.cs",
               "RelativeToolTip": "..\\TheFrogGames.Infraestructure\\ExternalServices\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwCEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T04:20:29.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T04:20:29.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Application\\Abstraction\\ExternalServices\\IAuthService.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Application\\Abstraction\\ExternalServices\\IAuthService.cs",
@@ -112,12 +126,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Application\\Abstraction\\ExternalServices\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T04:17:45.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T04:17:45.183Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "LoginUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Contracts\\User\\Request\\LoginUserRequest.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Contracts\\User\\Request\\LoginUserRequest.cs",
@@ -125,12 +138,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Request\\LoginUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T04:13:11.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T04:13:11.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UserResponse.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Contracts\\User\\Response\\UserResponse.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Contracts\\User\\Response\\UserResponse.cs",
@@ -138,12 +150,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Response\\UserResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T04:10:40.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T04:10:40.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Application\\Service\\IUserService.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Application\\Service\\IUserService.cs",
@@ -151,25 +162,23 @@
               "RelativeToolTip": "..\\TheFrogGames.Application\\Service\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T04:08:23.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T04:08:23.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Application\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Application\\Service\\UserService.cs",
               "ToolTip": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Application\\Service\\UserService.cs",
               "RelativeToolTip": "..\\TheFrogGames.Application\\Service\\UserService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAzwCMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T04:08:08.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T04:08:08.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -182,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Domain\\Entities\\Role.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Domain\\Entities\\Role.cs",
@@ -190,25 +199,23 @@
               "RelativeToolTip": "..\\TheFrogGames.Domain\\Entities\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:59:46.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:59:46.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "TheFrogGamesDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Infraestructure\\Persistence\\TheFrogGamesDbContext.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Infraestructure\\Persistence\\TheFrogGamesDbContext.cs",
               "ToolTip": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Infraestructure\\Persistence\\TheFrogGamesDbContext.cs",
               "RelativeToolTip": "..\\TheFrogGames.Infraestructure\\Persistence\\TheFrogGamesDbContext.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAwCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwD4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:47:49.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:47:49.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Domain\\Entities\\User.cs",
@@ -216,12 +223,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Domain\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:47:14.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:47:14.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Domain\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Domain\\Entities\\BaseEntity.cs",
@@ -229,12 +235,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Domain\\Entities\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:46:38.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:46:38.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UpdateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Contracts\\User\\Request\\UpdateUserRequest.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Contracts\\User\\Request\\UpdateUserRequest.cs",
@@ -242,12 +247,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Request\\UpdateUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:46:03.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:46:03.475Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ParcialUpdateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Contracts\\User\\Request\\ParcialUpdateUserRequest.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Contracts\\User\\Request\\ParcialUpdateUserRequest.cs",
@@ -255,12 +259,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Request\\ParcialUpdateUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:46:03.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:46:03.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "CreateUserRequest.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Contracts\\User\\Request\\CreateUserRequest.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Contracts\\User\\Request\\CreateUserRequest.cs",
@@ -268,12 +271,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Contracts\\User\\Request\\CreateUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:46:02.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:46:02.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "IBaseRepository.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Application\\Abstraction\\IBaseRepository.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Application\\Abstraction\\IBaseRepository.cs",
@@ -281,12 +283,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Application\\Abstraction\\IBaseRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:38:23.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:38:23.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Application\\Abstraction\\IUserRepository.cs",
               "RelativeDocumentMoniker": "..\\TheFrogGames.Application\\Abstraction\\IUserRepository.cs",
@@ -294,12 +295,11 @@
               "RelativeToolTip": "..\\TheFrogGames.Application\\Abstraction\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T03:38:22.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:38:22.735Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -307,31 +307,30 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-14T03:37:56.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-14T03:37:56.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAUwCcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T03:58:23.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Santiago\\Desktop\\TP-PROG 4\\TheFrogGames.Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwC8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T03:48:26.714Z",
               "EditorCaption": ""

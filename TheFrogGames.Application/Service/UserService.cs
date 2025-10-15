@@ -36,7 +36,7 @@ public class UserService : IUserService
             Email = user.Email,
             Date = user.Date,
             Password = user.Password,
-            RoleId = user.RoleId = 3 // Default role as User
+            RoleId = user.RoleId = 3
         };
         return _userRepository.Create(newUser);
     }
