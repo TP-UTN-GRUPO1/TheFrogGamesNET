@@ -6,9 +6,11 @@ using System.Text;
 using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Application.Abstraction.ExternalServices;
 using TheFrogGames.Application.Service;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 using TheFrogGames.Infraestructure.ExternalServices;
 using TheFrogGames.Infraestructure.Persistence.Repository;
+using TheFrogGames.Infrastructure.ExternalServices;
+using TheFrogGames.Infrastructure.Options;
 using TheFrogGames.Infrastructure.Persistence;
 using TheFrogGames.Infrastructure.Persistence.Repository;
 
@@ -66,7 +68,15 @@ builder.Services.AddScoped<IPlatformService, PlatformService>();
 builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 builder.Services.AddScoped<IOrderService,OrderService>();
 builder.Services.AddScoped<IGenreService, GenreService>();
+/*
+builder.Services.Configure<GamesApiOptions>(
+builder.Configuration.GetSection("GamesApiOptions"));
+builder.Services.AddHttpClient<IExternalGameService, GamesFromFirebaseService>(); */
 
+builder.Services.Configure<GamesApiOptions>(
+builder.Configuration.GetSection("GamesApiOptions"));
+
+builder.Services.AddHttpClient<IExternalGameService, GamesFromFirebaseService>();
 
 var app = builder.Build();
 
@@ -79,7 +89,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors("FrontendCorsPolicy");
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

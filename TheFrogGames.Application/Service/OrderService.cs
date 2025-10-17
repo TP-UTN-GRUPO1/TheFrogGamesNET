@@ -1,7 +1,7 @@
 ﻿using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Application.Contracts.Responses;
 using TheFrogGames.Contracts.Order.Request;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 public class OrderService : IOrderService
 {

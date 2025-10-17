@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ale\\Desktop\\ServerNet\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {}
+    "C:\\Users\\Ale\\Desktop\\TP-P4-NET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ale\\Desktop\\ServerNet\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
+    "C:\\Users\\Ale\\Desktop\\TP-P4-NET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ale\\Desktop\\ServerNet\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Ale\\Desktop\\TP-P4-NET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
         "projectName": "TheFrogGames.Domain",
-        "projectPath": "C:\\Users\\Ale\\Desktop\\ServerNet\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
+        "projectPath": "C:\\Users\\Ale\\Desktop\\TP-P4-NET\\TheFrogGames.Domain\\TheFrogGames.Domain.csproj",
         "packagesPath": "C:\\Users\\Ale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ale\\Desktop\\ServerNet\\TheFrogGames.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Ale\\Desktop\\TP-P4-NET\\TheFrogGames.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

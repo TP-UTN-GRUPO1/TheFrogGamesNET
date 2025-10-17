@@ -1,4 +1,4 @@
-﻿namespace TheFrogGames.Domain.Entity;
+﻿namespace TheFrogGames.Domain.Entities;
 
 public abstract class BaseEntity
 {

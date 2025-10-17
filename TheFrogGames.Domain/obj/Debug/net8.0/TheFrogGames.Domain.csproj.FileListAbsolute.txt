@@ -92,3 +92,15 @@ C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames
 C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Domain\obj\Debug\net8.0\refint\TheFrogGames.Domain.dll
 C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.pdb
 C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Domain\obj\Debug\net8.0\ref\TheFrogGames.Domain.dll
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\bin\Debug\net8.0\TheFrogGames.Domain.deps.json
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\bin\Debug\net8.0\TheFrogGames.Domain.dll
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\bin\Debug\net8.0\TheFrogGames.Domain.pdb
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.AssemblyInfoInputs.cache
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.AssemblyInfo.cs
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.sourcelink.json
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.dll
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\refint\TheFrogGames.Domain.dll
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\TheFrogGames.Domain.pdb
+C:\Users\Ale\Desktop\TP-P4-NET\TheFrogGames.Domain\obj\Debug\net8.0\ref\TheFrogGames.Domain.dll

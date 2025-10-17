@@ -1,7 +1,7 @@
 ﻿using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Contracts.Game.Request;
 using TheFrogGames.Contracts.Game.Response;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 namespace TheFrogGames.Application.Service
 {
@@ -179,6 +179,11 @@ namespace TheFrogGames.Application.Service
             if(!success)
                 throw new ApplicationException("Error al actualizar la disponibilidad del juego.");
             return true;
+        }
+
+        public Task AddGamesAsync(IEnumerable<GameResponse> games, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
         }
     }
 }

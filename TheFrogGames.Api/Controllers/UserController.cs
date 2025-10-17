@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using TheFrogGames.Application.Service;
 using TheFrogGames.Contracts.User.Request;
 using TheFrogGames.Contracts.User.Response;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 
 namespace TheFrogGames.Api.Controllers;
