@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TheFrogGames.Contracts.Game.Request;
-using TheFrogGames.Application.Service;
-using TheFrogGames.Contracts.Game.Response;
-using TheFrogGames.Application.Abstraction;
-
 using System.Threading.Tasks;
+using TheFrogGames.Application.Abstraction;
+using TheFrogGames.Application.Service;
+using TheFrogGames.Contracts.Game.Request;
+using TheFrogGames.Contracts.Game.Response;
+using TheFrogGames.Contracts.User.Request;
 
 namespace TheFrogGames.Api.Controllers
 {
@@ -47,6 +47,41 @@ namespace TheFrogGames.Api.Controllers
             if (game == null) return NotFound();
             return Ok(game);
         }
+
+        [HttpPut("{id}")]
+        public ActionResult Update(int id, [FromBody] CreateGameRequest game)
+        {
+            var isUpdated = _gameService.Update(id, game);
+            if (!isUpdated)
+            {
+                return Conflict("No se pudo actualizar el juego");
+            }
+            return NoContent();
+        }
+
+        [HttpPatch("{id}/availability")]
+        public IActionResult SoftDelete(int id)
+        {
+            var request = new ParcialUpdateGameRequest { Id = id, Available = false };
+            var result = _gameService.softDeleteGame(id, request);
+
+            if (!result)
+                return NotFound();
+
+            return NoContent();
+        }
+        [HttpPatch("{id}/restore")]
+        public IActionResult Restore(int id)
+        {
+            var request = new ParcialUpdateGameRequest { Id = id, Available = true };
+            var result = _gameService.softDeleteGame(id, request);
+
+            if (!result)
+                return NotFound();
+
+            return NoContent();
+        }
+
 
     }
 }

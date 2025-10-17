@@ -14,4 +14,5 @@ public interface IGameService
     bool Update(int id, CreateGameRequest request);
     bool UpdateKeyMetadata(int id, UpdateKeyMetadataGameRequest producto);
     bool Delete(int id);
+    bool softDeleteGame(int id ,ParcialUpdateGameRequest request);
 }

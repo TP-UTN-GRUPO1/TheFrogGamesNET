@@ -88,3 +88,19 @@ C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Contracts\bin\Debug\net8.0\TheF
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Domain.pdb
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.csproj.AssemblyReference.cache
 C:\Users\Santiago\Desktop\TP-PROG 4\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogG.2F0B1428.Up2Date
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Contracts.deps.json
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Contracts.pdb
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Domain.dll
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\bin\Debug\net8.0\TheFrogGames.Domain.pdb
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.csproj.AssemblyReference.cache
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.AssemblyInfoInputs.cache
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.AssemblyInfo.cs
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.sourcelink.json
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogG.2F0B1428.Up2Date
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\refint\TheFrogGames.Contracts.dll
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\TheFrogGames.Contracts.pdb
+C:\Users\Ale\Desktop\ServerNet\TheFrogGames.Contracts\obj\Debug\net8.0\ref\TheFrogGames.Contracts.dll

@@ -166,5 +166,19 @@ namespace TheFrogGames.Application.Service
 
             return _gameRepo.Delete(gameToDelete);
         }
+
+        public bool softDeleteGame(int id, ParcialUpdateGameRequest request)
+        {
+            var gameToDelete = _gameRepo.GetById(id, trackChanges: true);
+            if (gameToDelete == null)
+                throw new Exception($"Juego con ID {id} no encontrado.");
+            gameToDelete.Available = request.Available;
+
+            bool success = _gameRepo.Update(gameToDelete);
+
+            if(!success)
+                throw new ApplicationException("Error al actualizar la disponibilidad del juego.");
+            return true;
+        }
     }
 }
