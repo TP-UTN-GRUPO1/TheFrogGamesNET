@@ -1,4 +1,4 @@
-﻿namespace TheFrogGames.Domain.Entity;
+﻿namespace TheFrogGames.Domain.Entities;
 public class Genre : BaseEntity
 {
     public string? Name { get; set; }

@@ -1,4 +1,4 @@
-﻿using TheFrogGames.Domain.Entity;
+﻿using TheFrogGames.Domain.Entities;
 namespace TheFrogGames.Application.Abstraction
 {
     public interface IOrderRepository : IBaseRepository<Order>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AfH4y6OmjTM=",
+  "dgSpecHash": "nLQtyMLnPb0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ale\\Desktop\\ServerNet\\TheFrogGames.Api\\TheFrogGames.Api.csproj",
+  "projectFilePath": "C:\\Users\\Ale\\Desktop\\TP-P4-NET\\TheFrogGames.Api\\TheFrogGames.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ale\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Ale\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",

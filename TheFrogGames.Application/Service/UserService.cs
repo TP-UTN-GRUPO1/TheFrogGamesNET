@@ -2,7 +2,7 @@
 using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Contracts.User.Request;
 using TheFrogGames.Contracts.User.Response;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 namespace TheFrogGames.Application.Service;
 

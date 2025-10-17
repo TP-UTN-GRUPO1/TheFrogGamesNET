@@ -15,4 +15,5 @@ public interface IGameService
     bool UpdateKeyMetadata(int id, UpdateKeyMetadataGameRequest producto);
     bool Delete(int id);
     bool softDeleteGame(int id ,ParcialUpdateGameRequest request);
+    Task AddGamesAsync(IEnumerable<GameResponse> games, CancellationToken cancellationToken = default);
 }

@@ -1,7 +1,7 @@
 ﻿using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Application.Contracts.Genre.Request;
 using TheFrogGames.Contracts.Genre.Response;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 namespace TheFrogGames.Application.Service
 {

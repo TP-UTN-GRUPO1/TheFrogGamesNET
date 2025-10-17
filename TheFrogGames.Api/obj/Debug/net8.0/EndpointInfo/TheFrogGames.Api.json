@@ -53,6 +53,56 @@
         }
       }
     },
+    "/api/ExternalGames": {
+      "get": {
+        "tags": [
+          "ExternalGames"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GameResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GameResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GameResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ExternalGames/import": {
+      "post": {
+        "tags": [
+          "ExternalGames"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Game": {
       "get": {
         "tags": [
@@ -987,15 +1037,26 @@
             "type": "boolean"
           },
           "rating": {
-            "type": "integer",
-            "format": "int32"
+            "type": "number",
+            "format": "float"
           },
           "sold": {
             "type": "integer",
             "format": "int32"
           },
-          "platform": {
-            "$ref": "#/components/schemas/PlatformID"
+          "platforms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlatformResponse"
+            },
+            "nullable": true
+          },
+          "genres": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GenreResponse"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1099,20 +1160,6 @@
           }
         },
         "additionalProperties": false
-      },
-      "PlatformID": {
-        "enum": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7
-        ],
-        "type": "integer",
-        "format": "int32"
       },
       "PlatformResponse": {
         "type": "object",

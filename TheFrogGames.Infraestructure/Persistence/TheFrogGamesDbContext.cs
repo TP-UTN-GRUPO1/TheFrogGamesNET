@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 namespace TheFrogGames.Infrastructure.Persistence
 {

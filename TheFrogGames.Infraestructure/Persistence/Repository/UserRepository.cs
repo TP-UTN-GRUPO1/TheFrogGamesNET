@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TheFrogGames.Application.Abstraction;
 using TheFrogGames.Contracts.User.Request;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 using TheFrogGames.Infrastructure.Persistence;
 using TheFrogGames.Infrastructure.Persistence.Repository;
 

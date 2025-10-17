@@ -1,5 +1,5 @@
 ﻿using TheFrogGames.Contracts.User.Request;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 namespace TheFrogGames.Application.Abstraction;
 

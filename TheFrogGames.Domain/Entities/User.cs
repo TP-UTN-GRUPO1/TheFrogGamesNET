@@ -1,6 +1,6 @@
 ﻿using System.Net.Sockets;
 
-namespace TheFrogGames.Domain.Entity;
+namespace TheFrogGames.Domain.Entities;
 
 public class User : BaseEntity
 {

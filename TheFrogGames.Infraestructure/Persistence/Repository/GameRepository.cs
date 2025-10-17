@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TheFrogGames.Application.Abstraction;
-using TheFrogGames.Domain.Entity;
+using TheFrogGames.Domain.Entities;
 
 namespace TheFrogGames.Infrastructure.Persistence.Repository
 {
