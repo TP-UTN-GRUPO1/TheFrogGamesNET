@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheFrogGames.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c186e2373c7e307353599fa6889f215e10c7bcbb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+798fda2962981679044bef05f0e92e1fbd2d9a4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheFrogGames.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheFrogGames.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

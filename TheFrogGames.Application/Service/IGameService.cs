@@ -9,7 +9,6 @@ public interface IGameService
     List<GameResponse> Search(string? name, int? categoriaId, decimal? pMin, decimal? pMax);
     List<GameResponse> GetByValue(decimal valor);
     GameResponse? GetGameById(int id);
-    int GetTotalGames();
     bool Create(CreateGameRequest request);
     bool Update(int id, CreateGameRequest request);
     bool UpdateKeyMetadata(int id, UpdateKeyMetadataGameRequest producto);

@@ -1,4 +1,5 @@
 ﻿
+using System.Text.Json.Serialization;
 using TheFrogGames.Contracts.Genre.Response;
 using TheFrogGames.Contracts.Platform.Response;
 using TheFrogGames.Domain.Entities;
@@ -15,8 +16,11 @@ namespace TheFrogGames.Contracts.Game.Response
         public Boolean Available { get; set; }
         public float Rating { get; set; }
         public int Sold { get; set; }
+        [JsonPropertyName("platform")]
+        public List<string> Platforms { get; set; } = new();
 
-        public ICollection<PlatformResponse>? Platforms { get; set; } = new List<PlatformResponse>();
-        public ICollection<GenreResponse>? Genres { get; set; } = new List<GenreResponse>();
+        [JsonPropertyName("genre")]
+        public List<string> Genres { get; set; } = new();
+        
     }
 }
