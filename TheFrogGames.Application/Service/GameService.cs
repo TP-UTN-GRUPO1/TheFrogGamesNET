@@ -8,10 +8,16 @@ namespace TheFrogGames.Application.Service
     public class GameService : IGameService
     {
         private readonly IGameRepository _gameRepo;
+        private readonly IGenreRepository _genreRepo;
+        private readonly IPlatformRepository _platformRepo;
 
-        public GameService(IGameRepository gameRepo)
+        public GameService(IGameRepository gameRepo,
+            IPlatformRepository platformRepo,
+            IGenreRepository genreRepo)
         {
             _gameRepo = gameRepo;
+            _platformRepo =platformRepo;
+            _genreRepo = genreRepo;
         }
 
         public List<GameResponse> GetAll()
@@ -27,7 +33,9 @@ namespace TheFrogGames.Application.Service
                 ImageUrl = g.ImageUrl,
                 Rating = g.Rating,
                 Available = g.Available,
-                Sold = g.Sold
+                Sold = g.Sold,
+                Platforms = g.Platforms.Select(p => p.Name).ToList(),
+                Genres = g.Genres.Select(g => g.Name).ToList()
             }).ToList();
         }
 
@@ -90,17 +98,20 @@ namespace TheFrogGames.Application.Service
                 ImageUrl = g.ImageUrl,
                 Rating = g.Rating,
                 Available = g.Available,
-                Sold = g.Sold
+                Sold = g.Sold,
+                Platforms = g.Platforms.Select(p => p.Name).ToList(),
+                Genres = g.Genres.Select(g => g.Name).ToList()
             }).ToList();
         }
 
-        public int GetTotalGames()
-        {
-            return _gameRepo.GetAll().Count();
-        }
 
         public bool Create(CreateGameRequest request)
         {
+
+            var existingGenres = _genreRepo.GetAll().ToList();
+            var existingPlatforms = _platformRepo.GetAll().ToList();
+
+
             var game = new Game
             {
                 Title = request.Title,
@@ -109,9 +120,42 @@ namespace TheFrogGames.Application.Service
                 ImageUrl = request.ImageUrl,
                 Rating = request.Rating,
                 Available = request.Available,
-                Sold = request.Sold
+                Sold = request.Sold,
+                Genres = new List<Genre>(),
+                Platforms = new List<Platform>()
             };
+            foreach (var genreName in request.Genres.Distinct(StringComparer.OrdinalIgnoreCase))
+            {
+                var existingGenre = existingGenres
+                    .FirstOrDefault(g => g.Name.Equals(genreName, StringComparison.OrdinalIgnoreCase));
 
+                if (existingGenre != null)
+                {
+                    
+                    game.Genres.Add(existingGenre);
+                }
+                else
+                {
+                    
+                    var newGenre = new Genre { Name = genreName };
+                    game.Genres.Add(newGenre);
+                }
+            }
+            foreach (var platformName in request.Platforms.Distinct(StringComparer.OrdinalIgnoreCase))
+            {
+                var existingPlatform = existingPlatforms
+                    .FirstOrDefault(p => p.Name.Equals(platformName, StringComparison.OrdinalIgnoreCase));
+
+                if (existingPlatform != null)
+                {
+                    game.Platforms.Add(existingPlatform);
+                }
+                else
+                {
+                    var newPlatform = new Platform { Name = platformName };
+                    game.Platforms.Add(newPlatform);
+                }
+            }
             bool success = _gameRepo.Create(game);
 
             if (!success)
