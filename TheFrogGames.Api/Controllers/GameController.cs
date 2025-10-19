@@ -82,6 +82,11 @@ namespace TheFrogGames.Api.Controllers
             return NoContent();
         }
 
-
+        [HttpGet("search")]
+        public IActionResult Search([FromQuery] string? name)
+        {
+            var result = _gameService.Search(name);
+            return Ok(result);
+        }
     }
 }

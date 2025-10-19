@@ -6,7 +6,7 @@ namespace TheFrogGames.Application.Abstraction;
 public interface IGameService
 {
     List<GameResponse> GetAll();
-    List<GameResponse> Search(string? name, int? categoriaId, decimal? pMin, decimal? pMax);
+    List<GameResponse> Search(string? name);
     List<GameResponse> GetByValue(decimal valor);
     GameResponse? GetGameById(int id);
     bool Create(CreateGameRequest request);

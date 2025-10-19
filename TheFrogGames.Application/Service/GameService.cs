@@ -57,20 +57,12 @@ namespace TheFrogGames.Application.Service
             };
         }
 
-        public List<GameResponse> Search(string? name, int? categoriaId, decimal? pMin, decimal? pMax)
+        public List<GameResponse> Search(string? name)
         {
             var games = _gameRepo.GetAll().AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(name))
                 games = games.Where(g => g.Title.Contains(name, StringComparison.OrdinalIgnoreCase));
-
-        
-
-            if (pMin.HasValue)
-                games = games.Where(g => g.Price >= pMin.Value);
-
-            if (pMax.HasValue)
-                games = games.Where(g => g.Price <= pMax.Value);
 
             return games.Select(g => new GameResponse
             {

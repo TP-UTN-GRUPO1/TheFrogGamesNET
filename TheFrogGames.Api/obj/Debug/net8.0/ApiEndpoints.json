@@ -161,6 +161,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TheFrogGames.Api.Controllers.GameController",
+    "Method": "Search",
+    "RelativePath": "api/Game/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TheFrogGames.Api.Controllers.GenreController",
     "Method": "GetAll",
     "RelativePath": "api/Genre",
