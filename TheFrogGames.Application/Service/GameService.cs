@@ -35,7 +35,7 @@ namespace TheFrogGames.Application.Service
                 Available = g.Available,
                 Sold = g.Sold,
                 Platforms = g.Platforms.Select(p => p.Name).ToList(),
-                Genres = g.Genres.Select(g => g.Name).ToList()
+                Genres = g.Genres.Select(ge => ge.Name).ToList()
             }).ToList();
         }
 

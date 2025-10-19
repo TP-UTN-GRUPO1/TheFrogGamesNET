@@ -12,11 +12,12 @@ namespace TheFrogGames.Infrastructure.Persistence.Repository
         {
             _context = context;
         }
-        public List<Game> GetAll()
+        public List<Game> GetAll() // como esta en infra devolvemos la entidad de dominio y no el dto ojo con eso
         {
             return _context.Games
-                .Include(g => g.Platforms)
                 .Include(g => g.Genres)
+                .Include(g => g.Platforms)
+                .AsNoTrackingWithIdentityResolution()
                 .ToList();
         }
         public async Task<Game?> GetByIdAsync(int id)
