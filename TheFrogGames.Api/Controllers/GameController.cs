@@ -17,7 +17,7 @@ namespace TheFrogGames.Api.Controllers
         {
             _gameService = gameService;
         }
-        [HttpGet]
+       /* [HttpGet]
         public ActionResult<List<GameResponse>> GetAll()
         {
             var listGame = _gameService.GetAll();
@@ -26,7 +26,20 @@ namespace TheFrogGames.Api.Controllers
                 return NotFound();
             }
             return Ok(listGame);
+        } */
+        [HttpGet]
+        public async Task<ActionResult<List<GameResponse>>> GetAllAsync(CancellationToken cancellationToken)
+        {
+            var listGame = await _gameService.GetAllAsync(cancellationToken);
+
+            if (listGame == null || !listGame.Any())
+            {
+                return NotFound("No se encontraron juegos en la base de datos.");
+            }
+
+            return Ok(listGame);
         }
+
         [HttpPost]
         public ActionResult Create([FromBody] CreateGameRequest game)
         {

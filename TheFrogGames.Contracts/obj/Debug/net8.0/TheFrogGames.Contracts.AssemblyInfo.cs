@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TheFrogGames.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d41ed7a39ff121e64d54d160162166dbaafaf183")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c62542220b6c811f1dd13a69298dac40f8a812c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TheFrogGames.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TheFrogGames.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -221,5 +221,23 @@ namespace TheFrogGames.Application.Service
         {
             throw new NotImplementedException();
         }
+        public async Task<IEnumerable<GameResponse>> GetAllAsync(CancellationToken cancellationToken)
+        {
+            var games = await _gameRepo.GetAllAsync(cancellationToken);
+
+            return games.Select(g => new GameResponse
+            {
+                Id = g.Id,
+                Title = g.Title,
+                Developer = g.Developer,
+                ImageUrl = g.ImageUrl,
+                Price = g.Price,
+                Available = g.Available,
+                Rating = g.Rating,
+                Sold = g.Sold,
+                Genres = g.Genres.Select(ge => ge.Name).ToList(),
+                Platforms = g.Platforms.Select(p => p.Name).ToList()
+            });
+        }
     }
 }

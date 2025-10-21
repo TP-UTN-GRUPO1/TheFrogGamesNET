@@ -1,5 +1,6 @@
 ﻿using TheFrogGames.Contracts.Game.Request;
 using TheFrogGames.Contracts.Game.Response;
+using TheFrogGames.Domain.Entities;
 
 namespace TheFrogGames.Application.Abstraction;
 
@@ -15,4 +16,10 @@ public interface IGameService
     bool Delete(int id);
     bool softDeleteGame(int id ,ParcialUpdateGameRequest request);
     Task AddGamesAsync(IEnumerable<GameResponse> games, CancellationToken cancellationToken = default);
+     Task<IEnumerable<GameResponse>> GetAllAsync(CancellationToken cancellationToken);
+
+    /* el cancellationtoken se usa para buenas practicas cuando hacemos cosas asincronicas , para que EF no siga
+     ejecutando la consulta si ya cerre el http , es opcional segun la ia y el resto de internet se puede usar o no 
+    en proyectos chicos no pasa nada peroo es buena practica
+     */
 }

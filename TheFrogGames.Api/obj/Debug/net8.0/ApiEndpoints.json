@@ -57,7 +57,7 @@
   },
   {
     "ContainingType": "TheFrogGames.Api.Controllers.GameController",
-    "Method": "GetAll",
+    "Method": "GetAllAsync",
     "RelativePath": "api/Game",
     "HttpMethod": "GET",
     "IsController": true,

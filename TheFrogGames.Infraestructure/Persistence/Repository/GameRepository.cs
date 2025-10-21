@@ -44,5 +44,13 @@ namespace TheFrogGames.Infrastructure.Persistence.Repository
             _context.Games.Add(game);
             return _context.SaveChanges() > 0;
         }
+        public async Task<IEnumerable<Game>> GetAllAsync(CancellationToken cancellationToken)
+        {
+            return await _context.Games
+                .Include(g => g.Genres)
+                .Include(g => g.Platforms)
+                .ToListAsync(cancellationToken);
+        }
+
     }
 }
