@@ -68,10 +68,7 @@ builder.Services.AddScoped<IPlatformService, PlatformService>();
 builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 builder.Services.AddScoped<IOrderService,OrderService>();
 builder.Services.AddScoped<IGenreService, GenreService>();
-/*
-builder.Services.Configure<GamesApiOptions>(
-builder.Configuration.GetSection("GamesApiOptions"));
-builder.Services.AddHttpClient<IExternalGameService, GamesFromFirebaseService>(); */
+
 
 builder.Services.Configure<GamesApiOptions>(
 builder.Configuration.GetSection("GamesApiOptions"));

@@ -35,7 +35,7 @@ namespace TheFrogGames.Application.Service
                 Available = g.Available,
                 Sold = g.Sold,
                 Platforms = g.Platforms.Select(p => p.Name).ToList(),
-                Genres = g.Genres.Select(g => g.Name).ToList()
+                Genres = g.Genres.Select(ge => ge.Name).ToList()
             }).ToList();
         }
 
@@ -57,20 +57,12 @@ namespace TheFrogGames.Application.Service
             };
         }
 
-        public List<GameResponse> Search(string? name, int? categoriaId, decimal? pMin, decimal? pMax)
+        public List<GameResponse> Search(string? name)
         {
             var games = _gameRepo.GetAll().AsQueryable();
 
             if (!string.IsNullOrWhiteSpace(name))
                 games = games.Where(g => g.Title.Contains(name, StringComparison.OrdinalIgnoreCase));
-
-        
-
-            if (pMin.HasValue)
-                games = games.Where(g => g.Price >= pMin.Value);
-
-            if (pMax.HasValue)
-                games = games.Where(g => g.Price <= pMax.Value);
 
             return games.Select(g => new GameResponse
             {
@@ -228,6 +220,24 @@ namespace TheFrogGames.Application.Service
         public Task AddGamesAsync(IEnumerable<GameResponse> games, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
+        }
+        public async Task<IEnumerable<GameResponse>> GetAllAsync(CancellationToken cancellationToken)
+        {
+            var games = await _gameRepo.GetAllAsync(cancellationToken);
+
+            return games.Select(g => new GameResponse
+            {
+                Id = g.Id,
+                Title = g.Title,
+                Developer = g.Developer,
+                ImageUrl = g.ImageUrl,
+                Price = g.Price,
+                Available = g.Available,
+                Rating = g.Rating,
+                Sold = g.Sold,
+                Genres = g.Genres.Select(ge => ge.Name).ToList(),
+                Platforms = g.Platforms.Select(p => p.Name).ToList()
+            });
         }
     }
 }

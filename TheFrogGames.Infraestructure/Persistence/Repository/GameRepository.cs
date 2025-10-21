@@ -12,11 +12,12 @@ namespace TheFrogGames.Infrastructure.Persistence.Repository
         {
             _context = context;
         }
-        public List<Game> GetAll()
+        public List<Game> GetAll() // como esta en infra devolvemos la entidad de dominio y no el dto ojo con eso
         {
             return _context.Games
-                .Include(g => g.Platforms)
                 .Include(g => g.Genres)
+                .Include(g => g.Platforms)
+                .AsNoTrackingWithIdentityResolution()
                 .ToList();
         }
         public async Task<Game?> GetByIdAsync(int id)
@@ -43,5 +44,13 @@ namespace TheFrogGames.Infrastructure.Persistence.Repository
             _context.Games.Add(game);
             return _context.SaveChanges() > 0;
         }
+        public async Task<IEnumerable<Game>> GetAllAsync(CancellationToken cancellationToken)
+        {
+            return await _context.Games
+                .Include(g => g.Genres)
+                .Include(g => g.Platforms)
+                .ToListAsync(cancellationToken);
+        }
+
     }
 }

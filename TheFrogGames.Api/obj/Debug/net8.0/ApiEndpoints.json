@@ -57,7 +57,7 @@
   },
   {
     "ContainingType": "TheFrogGames.Api.Controllers.GameController",
-    "Method": "GetAll",
+    "Method": "GetAllAsync",
     "RelativePath": "api/Game",
     "HttpMethod": "GET",
     "IsController": true,
@@ -156,6 +156,22 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TheFrogGames.Api.Controllers.GameController",
+    "Method": "Search",
+    "RelativePath": "api/Game/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
